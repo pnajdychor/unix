@@ -1,0 +1,2 @@
+ssh -fNT -R 4000:localhost:22 user_remote@remote_server -i <priv_key>
+ssh -p 4000 pnajdychor@localhost
