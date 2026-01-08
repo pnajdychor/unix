@@ -1,2 +1,5 @@
 ssh -fNT -R 4000:localhost:22 user_remote@remote_server -i <priv_key>
 ssh -p 4000 pnajdychor@localhost
+
+ssh-keygen -t ed25519 -a 100 -C "klucz_pnajdychor" -f .ssh/pnajdychor_key
+ssh-copy-id -i .ssh/pnajdychor_key.pub user_remote@remote_Server
